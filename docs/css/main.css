@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+:root {
+    --dark-color: rgb(30, 33,29);
+    --mid-color: rgb(162, 185, 191);
+    --light-color: rgb(215,223, 232);
+    --burgundy: rgb(145, 52, 40);
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
+body
 
 html{
    font: 20px/1 "Ubuntu", sans-serif;
