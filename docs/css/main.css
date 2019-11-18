@@ -8,9 +8,23 @@ html{
    font: 20px/1 "Ubuntu", sans-serif;
 }
 
+button {
+    border-radius: 6px;
+    background-color: ;
+    color: black;
+    border: 2px solid #f44336;
+    padding: .2rem;
+}
+
+    
+button:hover {
+        background-color: #f44336;
+        color: white;
+      }
+
 .wrapper{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
@@ -26,13 +40,11 @@ html{
 .log-in__host {
     display: flex;
     align-items: center;
-    background-color: aquamarine;
 }
 
 .log-in__speaker {
     display: flex;
     align-items: center;
-    background-color: chartreuse;
 }
 
 .speakerwyr {
