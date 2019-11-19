@@ -1,0 +1,53 @@
+
+.Wrapper{
+    display: grid;
+    margin: 5rem;
+    grid-template-rows: 50px 100px 50px 50px 50px auto;
+    grid-template-columns: 400px 400px;
+    text-align: center;
+}
+
+.talk-card{
+    text-align: center;
+    grid-column: 1/ span 2;
+}
+
+.genre{
+    text-align: left;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.tags{
+    text-align: left;
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.description{
+    text-align: left;  
+    grid-column: 1 / span 2;
+    grid-row: 2;    
+}
+
+.length{
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.speaker{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.movie-container{
+   text-align: center;
+   grid-column: 1 / span 2;
+   grid-row: 6;
+
+}
