@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+:root {
+    --dark-color: rgb(30, 33,29);
+    --mid-color: rgb(162, 185, 191);
+    --light-color: rgb(215,223, 232);
+    --burgundy: rgb(145, 52, 40);
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    font: 20px/1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+button {
+    border-radius: 6px;
+    background-color: var(--burgundy);
+    color: var(--light-color);
+    border: 2px solid var(--dark-color);
+    padding: .2rem;
+    width: 6rem;
+    height: 1.5rem;
+}
+
+    
+button:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+

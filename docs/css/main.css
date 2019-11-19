@@ -1,18 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+:root {
+    --dark-color: rgb(30, 33,29);
+    --mid-color: rgb(162, 185, 191);
+    --light-color: rgb(215,223, 232);
+    --burgundy: rgb(145, 52, 40);
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 html{
    font: 20px/1 "Ubuntu", sans-serif;
+   
 }
+
+button {
+    border-radius: 6px;
+    background-color: var(--burgundy);
+    color: var(--light-color);
+    border: 2px solid var(--dark-color);
+    padding: .2rem;
+    width: 6rem;
+    height: 1.5rem;
+}
+
+    
+button:hover {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+      }
 
 .wrapper{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    background-color: var(--mid-color);
+    min-height: 100vh;
+    
+}
+
+.wrapper-image{
+    background-image: url("../../resources/images/mic.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
 }
 
 .log-in {
@@ -26,19 +67,18 @@ html{
 .log-in__host {
     display: flex;
     align-items: center;
-    background-color: aquamarine;
 }
 
 .log-in__speaker {
     display: flex;
     align-items: center;
-    background-color: chartreuse;
 }
 
-.speakerwyr {
+.appname {
     grid-column: 1/span 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
