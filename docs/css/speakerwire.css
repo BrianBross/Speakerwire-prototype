@@ -51,6 +51,7 @@ select {
 input {
     background-color: var(--light-color);
     padding: .25rem .5rem;
+    color: var(--dark-color);
 }
 
 submit button
