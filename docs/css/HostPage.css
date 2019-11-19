@@ -1,0 +1,65 @@
+.action {
+    grid-area: action;
+    column-span: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.current-connections {
+    border: 3px;
+}
+hr{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: .5rem;
+    border-radius: 6px;
+    background-color: var(--darkcolor);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20rem, .1rem, 80rem, auto;
+    grid-template-areas:"nameplate nameplate nameplate headshot headshot headshot"
+                        "hrule hrule hrule hrule hrule hrule"
+                        "action action action action schedule schedule"
+                        "result result result result result result";
+    min-width: 90vw;
+    min-height: 100vh;
+    margin: 1rem;
+}
+
+.headshot-container {
+    grid-area: headshot;
+    column-span: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hrule {
+    grid-area: hrule;
+    column-span: 6;
+}
+
+.nameplate {
+    grid-area: nameplate;
+    column-span: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nameplate__name {
+    margin: 1rem;
+}
+
+.nameplate__location {
+    margin: 1rem;
+}
+
+.nameplate__description {
+    margin: 1rem;
+}
