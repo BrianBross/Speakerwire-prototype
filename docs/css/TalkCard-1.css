@@ -15,13 +15,19 @@
     grid-row: 2;    
 }
 
-.genre{
+.genres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
     grid-column: 1 / span 2;
     grid-row: 4;
 }
 
 .length{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
     grid-column-start: 1;
     grid-column-end: 1;
@@ -29,12 +35,10 @@
     grid-row-end: 3;
 }
 
-
 .movie-container{
     text-align: center;
     grid-column: 1 / span 2;
     grid-row: 6;
-    
 }
 
 .speaker{
@@ -53,19 +57,22 @@
 
 .talk-card {
     display: grid;
-    grid-template-rows: 6rem 9rem 6rem 6rem 6rem auto;
+    grid-template-rows: 6rem 6rem 4rem 4rem 4rem auto;
     grid-template-columns: 25rem 25rem;
     /* max-width: 50rem; */
     text-align: center;
 }
 
-.tags{
-    text-align: left;
+.tags {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     grid-column: 1 / span 2;
     grid-row: 5;
 }
 
 .wrapper{
+    font-family: var(--roboto);
     display: grid;
     margin: 5rem;
     background-color: var(--light-color);
