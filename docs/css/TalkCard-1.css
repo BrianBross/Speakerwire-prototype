@@ -1,13 +1,4 @@
-:root {
-    --dark-color: rgb(30, 33,29);
-    --mid-color: rgb(162, 185, 191);
-    --light-color: rgb(215,223, 232);
-    --burgundy: rgb(145, 52, 40);
-    --roboto: 'Roboto', sans-serif;
-    --montserrat: 'Montserrat', sans-serif;
-    --open-sans: 'Open Sans', sans-serif;
-    font: 20px/1;
-}
+
 
 .description{
     text-align: left;  
@@ -49,17 +40,21 @@
 }
 
 .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: var(--montserrat);
     grid-column: 1/ span 2;
     background-color: var(--dark-color);
-    color: var(--light-color)
+    color: white;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 .talk-card {
     display: grid;
     grid-template-rows: 6rem 6rem 4rem 4rem 4rem auto;
     grid-template-columns: 25rem 25rem;
-    /* max-width: 50rem; */
     text-align: center;
 }
 
@@ -78,4 +73,5 @@
     background-color: var(--light-color);
     border:2px solid var(--dark-color);
     padding: 2rem ;
+    max-width: 54rem;
 }
