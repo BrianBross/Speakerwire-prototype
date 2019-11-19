@@ -44,8 +44,7 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     background-color: var(--mid-color);
-    min-height: 100vh;
-    
+    min-height: 100vh; 
 }
 
 .wrapper-image{
