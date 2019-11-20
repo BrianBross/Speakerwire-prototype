@@ -71,4 +71,38 @@ hr{
 .talk-card-container {
     grid-area: talkcard;
     column-span: 4;
+    margin: 1rem 0.5rem 0 0;
 }
+
+.upcoming-card {
+    border: 2px solid black;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    background-color: var(--light-color);
+}
+
+.upcoming-card__status {
+    color: var(--coral);
+    align-self: right;
+    margin-left: 1rem;
+}
+
+.upcoming-card__status-container {
+    display: flex;
+}
+
+.upcoming-events-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: schedule;
+    column-span: 2;
+    background-color: var(--mid-color);
+    margin: 2rem 0 0.5rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.upcoming-title {
+    color: var(--light-color);
+    align-self: center;    
+}
+
