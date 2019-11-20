@@ -1,21 +1,74 @@
-.wrapper{
-    display: grid;
-    grid-template-rows: 10rem 10rem 10rem 10rem;
-    grid-template-columns: 10rem 10rem;
+@import "speakerwire.css";
+
+.action {
+    grid-area: action;
+    column-span: 4;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
 
-h1{
-    text-align: left;
-    grid-column: 1 / span 2;
-    grid-row: 1; 
+.current-connections {
+    border: 3px;
 }
-
-.tags{
-    text-align: left;
-    grid-column: 1 / span 2;
-    grid-row: 2;
-}
-
 hr{
-    grid-column: 1 / span 2;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: .5rem;
+    border-radius: 6px;
+    background-color: var(--dark-color);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20rem .1rem 80rem auto;
+    grid-template-areas:"nameplate nameplate nameplate headshot headshot headshot"
+                        "hrule hrule hrule hrule hrule hrule"
+                        "talkcard talkcard talkcard talkcard schedule schedule"
+                        "result result result result result result";
+    min-width: 90vw;
+    min-height: 100vh;
+    margin: 1rem;
+    background-color: var(--light-color);
+}
+
+.headshot-container {
+    grid-area: headshot;
+    column-span: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hrule {
+    grid-area: hrule;
+    column-span: 6;
+}
+
+.nameplate {
+    grid-area: nameplate;
+    column-span: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nameplate__name {
+    margin: 1rem;
+}
+
+.nameplate__location {
+    margin: 1rem;
+}
+
+.nameplate__description {
+    margin: 1rem;
+}
+
+.talk-card-container {
+    grid-area: talkcard;
+    column-span: 4;
 }
