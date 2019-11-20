@@ -1,8 +1,11 @@
+@import "speakerwire.css";
+
 .action {
     grid-area: action;
     column-span: 4;
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 }
 
 .current-connections {
@@ -14,7 +17,7 @@ hr{
     margin-right: auto;
     height: .5rem;
     border-radius: 6px;
-    background-color: var(--darkcolor);
+    background-color: var(--dark-color);
 }
 .wrapper {
     display: grid;
@@ -27,6 +30,7 @@ hr{
     min-width: 90vw;
     min-height: 100vh;
     margin: 1rem;
+    background-color: var(--light-color);
 }
 
 .headshot-container {
