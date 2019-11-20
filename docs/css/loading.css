@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('/docs/css/speakerwire.css');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
 
 .appname {
     grid-column: 1/span 3;
@@ -7,24 +10,31 @@
     align-items: center;
     margin-top: 2rem;
     padding-top: 2rem;
+    font-family: Merienda;
+    font-size: 5rem;
+    color: black;
 }
 
-.log-in {
-    grid-column: 1/span 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
+.blurb {
+    font-family: Architects Daughter;
 }
 
 .log-in__host {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.log-in__register {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .log-in__speaker {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .wrapper{
