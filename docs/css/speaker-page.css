@@ -8,6 +8,9 @@
     margin: 1rem;
 }
 
+.button-container {
+    margin-left: 1rem;
+}
 .current-connections {
     border: 3px;
 }
@@ -56,6 +59,7 @@ hr{
     padding: 1rem;
 }
 
+
 .nameplate__name {
     margin: 1rem;
 }
@@ -81,10 +85,18 @@ hr{
     background-color: var(--light-color);
 }
 
-.upcoming-card__status {
+.upcoming-card__status-booked {
     color: var(--coral);
     align-self: right;
     margin-left: 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.upcoming-card__status-pending {
+    color: var(--gold);
+    align-self: right;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px black;
 }
 
 .upcoming-card__status-container {
