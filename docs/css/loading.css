@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+.appname {
+    grid-column: 1/span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.log-in {
+    grid-column: 1/span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.log-in__host {
+    display: flex;
+    align-items: center;
+}
+
+.log-in__speaker {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background-color: var(--mid-color);
+    min-height: 100vh; 
+}
+
+.wrapper-image{
+    background-image: url("../../resources/images/mic.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
