@@ -12,8 +12,8 @@
     display: grid;
     grid-template-rows: 3rem 6rem;
     grid-template-columns: 20% 80%;
-    /* grid-template-areas: "header header"
-                         "subject body"; */
+    grid-template-areas: "header header"
+                         "subject body";
     border: 2px solid var(--dark-color);
     margin: 1rem;
     box-shadow: 3px 3px var(--mid-color);
@@ -21,7 +21,7 @@
 }
 
 .current-connections__header {
-    /* grid-area: header; */
+    grid-area: header;
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
@@ -32,14 +32,14 @@
 }
 
 .current-connections__body {
-    /* grid-area: body; */
+    grid-area: body;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .current-connections__subject {
-    /* grid-area: subject; */
+    grid-area: subject;
     display: flex;
     align-items: flex-start;
     justify-content: right;
@@ -50,11 +50,11 @@
     display: grid;
     grid-template-rows: repeat(5, 3rem);
     grid-template-columns: 75% 25%;
-    /* grid-template-areas: "header header"
-                         "articles articles"
-                         "articles articles"
-                         "articles articles"
-                         "articles go"; */
+    grid-template-areas: "filterheader filterheader"
+                         "genrefilter genrefilter"
+                         "tagfilter tagfilter"
+                         "durationfilter durationfilter"
+                         "inputfilter go";
     border: 2px solid var(--dark-color);
     margin: 1rem;
     box-shadow: 3px 3px var(--mid-color);
@@ -62,7 +62,7 @@
 }
 
 .filter__duration {
-    /* grid-area: articles; */
+    grid-area: durationfilter;
     grid-column: 1 / span 2;
     display: flex;
     padding: 1rem;
@@ -71,7 +71,7 @@
 }
 
 .filter__genre {
-    /* grid-area: articles; */
+    grid-area: genrefilter;
     grid-column: 1 / span 2;
     display: flex;
     padding: 1rem;
@@ -80,7 +80,7 @@
 }
  
 .filter__header {
-    /* grid-area: header; */
+    grid-area: filterheader;
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@
 
 
 .filter__tag {
-    /* grid-area: articles; */
+    grid-area: tagfilter;
     grid-column: 1 / span 2;
     display: flex;
     padding: 1rem;
@@ -102,6 +102,7 @@
 }
 
 .filter__speaker-search {
+    grid-area: inputfilter;
     display: flex;
     padding: 1rem;
     align-items: flex-start;
