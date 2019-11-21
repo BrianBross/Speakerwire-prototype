@@ -16,6 +16,8 @@
                          "subject body"; */
     border: 2px solid var(--dark-color);
     margin: 1rem;
+    box-shadow: 3px 3px var(--mid-color);
+
 }
 
 .current-connections__header {
@@ -53,6 +55,8 @@
                          "articles go"; */
     border: 2px solid var(--dark-color);
     margin: 1rem;
+    box-shadow: 3px 3px var(--mid-color);
+
 }
 
 .filter__duration {
