@@ -2,7 +2,7 @@
 
 .action {
     grid-area: action;
-    column-span: 4;
+    grid-column: 1 / span 4;
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -27,6 +27,8 @@
     align-items: center;
     justify-content: center;
     border-bottom: double;
+    color: var(--light-color);
+    background-color: var(--mid-color);
 }
 
 .current-connections__body {
@@ -84,16 +86,11 @@
     align-items: center;
     justify-content: center;
     border-bottom: double;
+    color: var(--light-color);
+    background-color: var(--mid-color);
 }
 
-hr{
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: .5rem;
-    border-radius: 6px;
-    background-color: var(--dark-color);
-}
+
 
 .filter__tag {
     /* grid-area: articles; */
@@ -134,8 +131,7 @@ hr{
 
 .headshot-container {
     grid-area: headshot;
-    column-span: 3;
-    /* grid-column: 1 / span 3; */
+    grid-column: 4 / span 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,8 +144,7 @@ hr{
 
 .nameplate {
     grid-area: nameplate;
-    column-span: 3;
-    /* grid-column: 1 / span 3; */
+    grid-column: 1 / span 3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -168,3 +163,44 @@ hr{
 .nameplate__description {
     margin: 1rem;
 }
+
+.upcoming-card {
+    border: 2px solid black;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    background-color: var(--light-color);
+}
+
+.upcoming-card__status-booked {
+    color: var(--coral);
+    align-self: right;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.upcoming-card__status-pending {
+    color: var(--gold);
+    align-self: right;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.upcoming-card__status-container {
+    display: flex;
+}
+
+.upcoming-events-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: schedule;
+    grid-column: 5 / span 2;
+    background-color: var(--mid-color);
+    margin: 2rem 1rem 0.5rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.upcoming-title {
+    color: var(--light-color);
+    align-self: center;    
+}
+
