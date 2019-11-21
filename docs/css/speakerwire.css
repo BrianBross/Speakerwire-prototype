@@ -53,6 +53,15 @@ button:hover {
 
 }
 
+hr{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: .5rem;
+    border-radius: 6px;
+    background-color: var(--dark-color);
+}
+
 
 input {
     background-color: var(--coral);
